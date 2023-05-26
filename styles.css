@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 98, 128);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    width: 500px;
+    color: beige;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.setup-box {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setup {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 30px;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.initialTime {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+#show {
+    border: 5px solid rgb(14, 65, 80);
+    width: 40%;
+    border-radius: 40px;
+    padding-top: 0;
+    margin: 0 auto;
+}
+
+#describeTime {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#displayTime {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.fas {
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.setup-describe {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+#beepHolder {
+    background-color: bisque;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 500px) {
+    .initialTime {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/fa1c4181de.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <script src="./main.js"></script>
+    <title>Task Clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box">
+            <h1>25 + 5 Clock</h1>
+            <div class="setup-box">
+                <div>
+                    <p class="initialTime">Break Length</p>
+                    <div class="setup">
+                        <span id="decrease-break" class="fas fa-arrow-down"></span>
+                        <span class="setup-describe" id="breakTime"></span>
+                        <span id="increase-break" class="fas fa-arrow-up"></span>
+                    </div>
+                </div>
+                <div>
+                    <p class="initialTime">Session Length</p>
+                    <div class="setup">
+                        <span id="decrease-session" class="fas fa-arrow-down"></span>
+                        <span class="setup-describe" id="sessionTime"></span>
+                        <span id="increase-session" class="fas fa-arrow-up"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="show">
+                <p id="describeTime"></p>
+                <p id="displayTime"></p>
+            </div>
+            <div class="buttons">
+                <button id="start" class="fas fa-solid fa-play"></button>
+                <button id="stop" class="fas fa-solid fa-pause"></button>
+                <button id="refresh" class="fas fa-regular fa-arrows-rotate"></button>             
+            </div>
+        </div>
+        <audio id="beep" src="beep.mp3"></audio>
+    </div>
+</body>
+
+</html>
